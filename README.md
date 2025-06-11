@@ -138,3 +138,40 @@ Finally, to put your changes on github, run
 git push --set-upstream origin <branch-name>
 ```
 where you replace `<branch-name>` with the name you gave your branch above. If you're unsure of what branch you're on, you can check with `git status` or `git branch`. 
+
+
+### Setting up Python 
+1. Install [Homebrew](https://brew.sh/)
+   ```
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+2. Use homebrew to install python
+   ```
+   brew install python
+   ```
+And that's *technically* all you need to get started. Check your installation by running `python3 --version` or `python --version`. 
+
+## Making a virtual environment 
+When working on research projects and/or using large computing clusters (as most of you will be doing this summer), it is often useful to set up your own **virtual environment** in Python. A virtual environment is an isolated environment on your computer, where you can install specific packages you need (without installing them on your local computer or a computing cluster), and run/test your Python projects. It allows you to manage project-specific libraries, modules, and dependencies *without* interfering with other projects or the original Python installation. 
+
+You can think of a virtual environment as a separate container for each Python project. Each container:
+* Has its own Python interpreter
+* Has its own set of installed packages
+* Is isolated from other virtual environments
+* Can have different versions of the same package
+
+To create your own virtual environment, first run
+```
+python3 -m venv ../gradmapvenv
+```
+This will set up a virtual environment named `gradmapvenv` with subfolders in the **parent directory** of the one you ran the above command in. Note: the shorthand `..` will take you back one directory. 
+
+You can investigate the file/folder structure of your virtual environment using 
+```
+ls ../gradmapvenv
+```
+You should see something that looks like `bin 	include   lib   pyvenv.cfg`
+
+## Alternative text editors (vs code) 
+
+
