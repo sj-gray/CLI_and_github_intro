@@ -102,7 +102,7 @@ vim notes.txt
 Once you run this, your terminal will convert into a mostly blank screen with your text cursor at the top, and a message at the bottom specifying what file you just opened and the fact that it is a new file `"notes.txt" [New]`. `vim` has a few specific commands itself; the most common are listed below:
 * To start typing, you first have to go into insert mode by pressing `i`
 * When you're finished editing, press the "Esc" key to exit insert mode
-* Outside of insert mode, you can save your changes and quit vim using the command `:wq` (write and quit), or save without writing using `q!`.
+* Outside of insert mode, you can save your changes and quit vim using the command `:wq` (write and quit), or save without writing using `:q!`.
 
 So, to add some text to your new `notes.txt` file:
 1. Press `i` (after you have the file open with vim)
