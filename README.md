@@ -110,5 +110,18 @@ So, to add some text to your new `notes.txt` file:
 3. Press `esc`
 4. Type `:wq` to save your changes and quit vim.
 
-#### Check 
+#### Check git status, add, commit, and push changes
+Now that you've made a new file in this github repo, you can keep track of what changes you've made and what branch you're on using 
+```
+git status
+```
+After running this command (and if you've been following along above), you should see something like 
+```
+On branch sjgray
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	notes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
 
