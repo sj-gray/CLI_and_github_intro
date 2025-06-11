@@ -140,7 +140,7 @@ git push --set-upstream origin <branch-name>
 where you replace `<branch-name>` with the name you gave your branch above. If you're unsure of what branch you're on, you can check with `git status` or `git branch`. 
 
 
-### Setting up Python 
+## Setting up Python 
 1. Install [Homebrew](https://brew.sh/)
    ```
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
