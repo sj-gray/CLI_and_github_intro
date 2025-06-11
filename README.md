@@ -124,4 +124,17 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ```
-
+To store your local changes on github, first add the file(s) you've changed:
+```
+git add notes.txt
+```
+Then `commit` your changes with:
+```
+git commit -m "Wrote some notes"
+```
+The option `-m` allows you to write a commit message, which serves as a short description of what changes you've made that you would like to add to the repo. 
+Finally, to put your changes on github, run
+```
+git push --set-upstream origin <branch-name>
+```
+where you replace `<branch-name>` with the name you gave your branch above. If you're unsure of what branch you're on, you can check with `git status` or `git branch`. 
