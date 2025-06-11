@@ -188,6 +188,34 @@ We can confirm that numpy installed correctly and see what other packages we hav
 pip list
 ```
 
-## Alternative text editors (vs code) 
+## Alternative text/code editors (vs code) 
+There are several different code editors that are designed for writing, editing, and managing computer code. Compared to using a terminal text editor like vim, code editors make coding more efficient with features like auto-completion, error checkin, and syntax highlighting. 
 
+One popular code editor is [Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview) (aka VS Code). To get VS Code working, follow these steps:
+1. Download and install vs code
+   * [link for macOS download](https://code.visualstudio.com/docs/setup/mac)
+   * [link for Windows download](https://code.visualstudio.com/docs/setup/windows)
+   * [link for Linux download](https://code.visualstudio.com/docs/setup/linux)
+  
+2. If you're using WSL, download the WSL Extension on VS code [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+3. Open VS Code, navigate to the `File > Open Folder`. Find and open the `gradmap` folder we've been working in.
+   Alternatively, you can type `code .` while in the `gradmap` folder/directory in your terminal. This requires additional setup to be able to do on macs, described [here](https://code.visualstudio.com/docs/setup/mac#_configure-the-path-with-vs-code).
+4. Install the python extension in vs code [here](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+6. In VS Code, open the Command Palette using `cmd+shift+p` or 'ctrl+shift+p`. Start typing and select `Python: Select Interpreter`. The `gradmapvenv` virtual environment should appear. Select that one. 
+7. Now you're all set to start coding python scripts in VS Code!
+
+To start your first one, create a new file in the `gradmap/CLI_and_github_intro` folder in vs code. Let's make a python script, meaning that our file will have a `.py` at the end of its name. We'll name it `getting-started.py`. 
+
+VS Code also supports editing [jupyter notebooks](https://code.visualstudio.com/docs/datascience/jupyter-notebooks). These are specified by an `.ipynb` at the end of the file name (short for iPython Notebook). Try creating a jupyter notebook by creating a new file called `getting-started.ipynb`. 
+
+If you save these files, you can go back to the `gradmap/CLI_and_github_intro` folder in your terminal and run the `ls` command. You should see the new files you just made there! 
+
+## Final Notes
+In this installation/set-up intensive workshop, you've learned how to 
+* Interact with and terminal using the command line
+* Download and make changes to a github repository
+* Create and edit files using `vim` in the terminal
+* Create and edit files with fancy features in vs code
+
+Now that you have a basis for all of these skills, you can develop them more and use them in your research this summer. 
 
