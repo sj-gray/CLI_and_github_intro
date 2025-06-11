@@ -176,7 +176,18 @@ To use your virtual environment, you have to activate it with this command:
 ```
 source ../gradmapvenv/bin/activate
 ```
-After activation, your prompt will change to show that you are now working in the active environment. Mine looks like `(gradmapvenv) sgray@macbook ~/gradmap/CLI_and_github_intro $`
+After activation, your prompt will change to show that you are now working in the active environment. Mine looks like `(gradmapvenv) sgray@macbook ~/gradmap/CLI_and_github_intro $`.
+
+### Install packages to your virtual environment
+Once your virtual environment is activated, you can install packages in it, using `pip` or `pip3`. Let's install our good friend numpy:
+```
+pip install numpy
+```
+We can confirm that numpy installed correctly and see what other packages we have in our virtual environment by running 
+```
+pip list
+```
+
 ## Alternative text editors (vs code) 
 
 
