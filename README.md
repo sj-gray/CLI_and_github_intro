@@ -83,4 +83,32 @@ cd gradmap
 
 Scroll up to the top of this page & look for the the green `<>code` button. Click on it, navigate to the `SSH` tab, and copy the `git@github.com:sj-gray/CLI_and_github_intro.git` (or copy it from here, but following the steps described will be good practice). Now go to your terminal, type in `git clone ` and then paste the `git@github.com:sj-gray/CLI_and_github_intro.git` you should have copied to your clipboard. If you're using WSL/Linux, you will have to use `ctrl+shift+v` or right-click then select Paste. Macs can use the typical `cmd+v`. 
 
+Change into the directory of the repo you just pulled using 
+```
+cd CLI_and_github_intro
+```
+
+Create your own branch (and switch to it) using 
+```
+git checkout -b <branch-name>
+```
+Where you can replace `<branch-name>` with the desired name of your branch. In this example, you can just use your name. The `git checkout` command lets you navigate between branches, and the `-b` option specifies that you want to create a new branch then switch to it. 
+
+#### Create a new file 
+There are various text editors that can be used within the terminal; my go-to is `vim`, but you can test out others if you're curious (`nano` and `emacs` are examples of other terminal text editors). To start, you can create and open a new file with 
+```
+vim notes.txt
+```
+Once you run this, your terminal will convert into a mostly blank screen with your text cursor at the top, and a message at the bottom specifying what file you just opened and the fact that it is a new file `"notes.txt" [New]`. `vim` has a few specific commands itself; the most common are listed below:
+* To start typing, you first have to go into insert mode by pressing `i`
+* When you're finished editing, press the "Esc" key to exit insert mode
+* Outside of insert mode, you can save your changes and quit vim using the command `:wq` (write and quit), or save without writing using `q!`.
+
+So, to add some text to your new `notes.txt` file:
+1. Press `i` (after you have the file open with vim)
+2. Type a note, such as `Woooo I'm learning CLI and git and more!`
+3. Press `esc`
+4. Type `:wq` to save your changes and quit vim.
+
+#### Check 
 
