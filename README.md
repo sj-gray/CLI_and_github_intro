@@ -81,6 +81,6 @@ Navigate into this new directory using the `cd` (change directory) command:
 cd gradmap
 ```
 
-Scroll up to the top of this page & look for the the green `<>code` button. Click on it, navigate to the `SSH` tab, and copy the `git@github.com:sj-gray/CLI_and_github_intro.git` (or copy it from here, but following the steps described will be good practice). Now go to your terminal, type in `git clone ` and then paste the `git@github.com:sj-gray/CLI_and_github_intro.git` you should have copied to your clipboard. If you're using WSL/Linux, you will have to use `ctrl+shift+v' or right-click then select Paste. Macs can use the typical `cmd+v`. 
+Scroll up to the top of this page & look for the the green `<>code` button. Click on it, navigate to the `SSH` tab, and copy the `git@github.com:sj-gray/CLI_and_github_intro.git` (or copy it from here, but following the steps described will be good practice). Now go to your terminal, type in `git clone ` and then paste the `git@github.com:sj-gray/CLI_and_github_intro.git` you should have copied to your clipboard. If you're using WSL/Linux, you will have to use `ctrl+shift+v` or right-click then select Paste. Macs can use the typical `cmd+v`. 
 
 
