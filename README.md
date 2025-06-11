@@ -33,5 +33,41 @@ Several commands are frequently used to create, inspect, rename, and delete file
 * `-t` Sort the list by modification **t**ime (default sort is alphabetically)
 * `-c` Sort the list by last attribute (status) change time
 
-We can also use `ls` to list the contents of a different directory
+## GitHub setup 
+If you don't have one already, take a minute to make a github account. 
+
+### SSH Keys
+Once you have that set up, we will add a new SSH Key to your github account. SSH stands for Secure Shell; essentially it is a protocal that allows for secure remote login and file transfer. 
+
+First, let's check for existing ssh keys (if you haven't heard of ssh keys yet you likely don't have any, but checking makes for good command line practice). In your terminal, enter 
+```
+ls -al ~/.ssh
+```
+This will list all the files in your `.ssh` directory, if they exist. If not, there won't be any output. If there is output, check to see if one of the files looks like **id_rsa.pub, id_ecdsa.pub,** or **id_ed25519.pub**. If such a file exists, wait to follow the instructions (or skip down to **Adding your SSH key to the ssh-agent** below).
+
+#### Generating a new SSH Key
+To generate a new ssh key, copy and paste the text below into your terminal, replaceing the email with the email associated with your GitHub account. 
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+When you're prompted to "Enter a file in which to save the key", you can press **Enter** or **Return** to accept the default file location. 
+```
+> Generating public/private ALGORITHM key pair.
+> Enter a file in which to save the key (/Users/YOU/.ssh/id_ALGORITHM): [Press enter]
+```
+At the prompt, type a secure passphrase. For more information, see [Working with SSH key passphrases](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases). 
+
+#### Adding your SSH key to the ssh-agent
+1. Start the ss-agent in the background by running:
+   ```
+   eval "$(ssh-agent -s)"
+   ```
+2. Add your SSH private key to the ssh-agent
+   ```
+   ssh-add ~/.ssh/id_ed25519
+   ```
+3. Add the SSH public key to your account on GitHub. For these steps, see [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
+
+
+Once you've followed the steps to add your SSH key to your GitHub account, you'll be able to start pulling repositories from GitHub via SSH. Let's go through an example of that with this repository now. 
 
