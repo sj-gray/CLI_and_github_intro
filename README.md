@@ -201,7 +201,7 @@ One popular code editor is [Visual Studio Code](https://code.visualstudio.com/do
 3. Open VS Code, navigate to the `File > Open Folder`. Find and open the `gradmap` folder we've been working in.
    Alternatively, you can type `code .` while in the `gradmap` folder/directory in your terminal. This requires additional setup to be able to do on macs, described [here](https://code.visualstudio.com/docs/setup/mac#_configure-the-path-with-vs-code).
 4. Install the python extension in vs code [here](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-6. In VS Code, open the Command Palette using `cmd+shift+p` or 'ctrl+shift+p`. Start typing and select `Python: Select Interpreter`. The `gradmapvenv` virtual environment should appear. Select that one. 
+6. In VS Code, open the Command Palette using `cmd+shift+p` or `ctrl+shift+p`. Start typing and select `Python: Select Interpreter`. The `gradmapvenv` virtual environment should appear. Select that one. 
 7. Now you're all set to start coding python scripts in VS Code!
 
 To start your first one, create a new file in the `gradmap/CLI_and_github_intro` folder in vs code. Let's make a python script, meaning that our file will have a `.py` at the end of its name. We'll name it `getting-started.py`. 
