@@ -69,5 +69,18 @@ At the prompt, type a secure passphrase. For more information, see [Working with
 3. Add the SSH public key to your account on GitHub. For these steps, see [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 
+### Cloning a GitHub Repository and More CLI
 Once you've followed the steps to add your SSH key to your GitHub account, you'll be able to start pulling repositories from GitHub via SSH. Let's go through an example of that with this repository now. 
+
+In your terminal, make a new directory called gradmap using the `mkdir` (make directory) command:
+```
+mkdir gradmap
+```
+Navigate into this new directory using the `cd` (change directory) command: 
+```
+cd gradmap
+```
+
+Scroll up to the top of this page & look for the the green `<>code` button. Click on it, navigate to the `SSH` tab, and copy the `git@github.com:sj-gray/CLI_and_github_intro.git` (or copy it from here, but following the steps described will be good practice). Now go to your terminal, type in `git clone ` and then paste the `git@github.com:sj-gray/CLI_and_github_intro.git` you should have copied to your clipboard. If you're using WSL/Linux, you will have to use `ctrl+shift+v' or right-click then select Paste. Macs can use the typical `cmd+v`. 
+
 
